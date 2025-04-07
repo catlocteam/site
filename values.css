@@ -1,0 +1,173 @@
+@import url('fonts.css');
+
+p {
+    all: unset;
+}
+
+.header-title {
+    display: flex;
+    margin: 2vw 4vw 3vw;
+}
+
+.values-text1, .values-text2, .values-text3  {
+    color: #A71C66;
+    font-family: 'boba', sans-serif;
+    font-size: 1.7vw;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vw;
+}
+
+.values-text1, .values-text2, .values-text3 p {
+    padding: 0 10px;
+}
+
+#hiden-dots1, #hiden-dots2, #hiden-dots3 {
+    display: none;
+}
+
+.values-text-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vw;
+}
+
+.short-text {
+    margin: 2.5vw 0;
+}
+
+.values-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 31%;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    margin: 1vw;
+}
+
+.values-content-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 2vw;
+}
+
+.values-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.arrow-container {
+    width: 100%;
+    margin-left: 3.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer{
+    position: absolute;
+}
+
+footer img{
+    position: sticky;
+
+}
+
+#values-arrow {
+    display: none;
+}
+
+.arrow-down-size {
+    width: 10vw;
+}
+
+.footer-block {
+    margin: 90px 0 30px 0;
+}
+
+.hidden{
+    display: none;
+    height: 120px;
+}
+.visible{
+    
+    display: block;
+    height: 100%;
+}
+
+
+@media (min-width:0px) and (max-width:1024px) {
+
+    .header-title {
+        justify-content: center;
+        margin: 10% 0;
+    }
+
+    .header-title h4 {
+        font-size: 10vw;
+        letter-spacing: normal;
+    }
+    
+    .values-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .values-text-header h1 {
+        font-size: 6.3vw;
+    }
+
+    .short-text {
+        margin: 2.8vw 4vw;
+    }
+
+    .values-content {
+        width: 90%;
+        margin-bottom: 10vw;
+    }
+
+    .values-text-header {
+        width: 75%;
+        margin: 4vw;
+    }
+
+    .values-text1, .values-text2, .values-text3   {
+        font-size: 6vw;
+        margin-bottom: 5vw;
+        mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    }
+
+    .values-text1, .values-text2, .values-text3 p {
+        padding: 2vw;
+    }
+
+    #values-arrow1, #values-arrow2, #values-arrow3 {
+        display: flex;
+        margin-right: 7vw;
+    }
+
+    #hiden-text1, #hiden-text2, #hiden-text3 {
+        display: none;
+    }
+
+    #hiden-dots1, #hiden-dots2, #hiden-dots3 {
+        display: inline;
+    }
+
+    .arrow-container {
+        margin-left: 7vw;
+    }
+
+    .footer-block {
+        margin-top: 40px;
+    }
+}

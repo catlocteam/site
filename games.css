@@ -1,0 +1,476 @@
+@import url('fonts.css');
+
+p {
+    margin: 1vw 0;
+}
+
+body {
+    background-repeat: repeat-y;
+}
+
+.games-container {
+    width: 100%;
+    height: 56.6vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering:pixelated;
+    display: flex;
+    background-color: var(--black);
+}
+
+.game-text {
+    color: var(--white);
+    font-family: 'boba', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.a-new-life-container {
+    background-image: url(images/a_new_life_bg.png);
+}
+
+.a-new-life-sign-container {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.a-new-life-text-container {
+    margin: 0 7vw;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a-new-life-sign-size {
+    width: 28vw;
+    height: fit-content;
+    margin: 8vw 10vw 1vw;
+}
+
+.arrow-up-container {
+    width: 100%;
+    margin: 5vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.arrow-up-size {
+    width: 2vw;
+}
+
+.fran-bow-container {
+    background-image: url(images/fran_bow_bg.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fran-bow-sign-container {
+    margin: 11vw 7vw 0 0;
+}
+
+.fran-bow-text-container {
+    text-align: start;
+    width: 26vw;
+    margin-right: 7vw;
+}
+
+.fran-bow-size {
+    width: 25vw;
+    height: fit-content;
+}
+
+.fran-bow-title {
+    display: none;
+}
+
+.wolf-among-us-container {
+    background-image: url(images/wofl_among_us_bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wolf-among-us-sign-container {
+    margin: 9vw 0 11vw 14vw;
+}
+
+.wolf-among-us-size {
+    width: 32vw;
+}
+
+.wolf-among-us-text-container {
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 27vw;
+}
+
+.emmeline-burns-container {
+    background-image: url(images/emmeline_burns_bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emmeline-burns-sign-container {
+    margin: 6vw 0 0 12vw;
+}
+
+.emmeline-burns-size {
+    width: 35vw;
+}
+
+.emmeline-burns-text-container {
+    width: 28vw;
+    justify-content: center;
+    flex-direction: column;
+    margin: 16vw 40vw 0 0;
+}
+
+.games-footer-block {
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-header-container {
+    display: flex;
+    justify-content: center;
+    padding: 12vw;
+}
+
+.to-be-continued-text {
+    font-size: 3vw;
+}
+
+.footer-main {
+    background-color: var(--purple);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footer-main-content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 2vw 2vw;
+}
+
+.main-left-content {
+    display: flex;
+}
+
+.catloc_exploding_head-size {
+    width: 12vw;
+    margin-right: 1vw;
+}
+
+.found-an-error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.found-an-error-text {
+    width: 16vw;
+    margin-bottom: 1vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.mail-icon-size {
+    width: 4vw;
+}
+
+.main-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-text-container {
+    width: 54vw;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.support-text {
+    font-size: 2.5vw;
+}
+
+.support-btn {
+    width: 20vw;
+    margin-bottom: 5vw;
+}
+
+.copyright-container {
+    display: flex;
+    align-items : center;
+    flex-direction: column;
+}
+
+.copyright-line {
+    height: 3px;
+    width: 85vw;
+}
+
+.copyright-text {
+    font-size: 1vw;
+    margin: 1vw 0 3vw 0;
+}
+
+@media (min-width:0px) and (max-width:770px) {
+
+    .text-background {
+        background-color: rgb(245, 245, 245, 0.3);
+        border-radius: 20px;
+        padding: 6vw 4vw;
+    }
+
+    .text-background-dark {
+        background-color: rgb(15, 14, 14, 0.3);
+        border-radius: 20px;
+        padding: 6vw 4vw;
+    }
+
+    .games-container {
+        height: 178vw;
+    }
+
+    .game-text {
+        font-size: 4.5vw;
+    }
+
+    .a-new-life-container {
+        background-image: url(images/anewlifebg1920.png);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .a-new-life-header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a-new-life-sign-size {
+        width: 65vw;
+    }
+
+    .a-new-life-text-container {
+        margin: 4vw 0;
+        width: 75vw;
+    }
+
+    .a-new-life-text-container p {
+        margin: 3vw 0;
+    }
+
+    .fran-bow-container {
+        background-image: url(images/franbowbg1920.png);
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .fran-bow-text-container {
+        width: 75vw;
+        margin: 30vw 0 0 0;
+        text-align: center;
+    }
+
+    .fran-bow-text-container p {
+        margin: 3vw 0;
+    }
+
+    .fran-bow-sign-container {
+        margin: 30vw 5vw 0 0;
+    }
+
+    .fran-bow-sign-container_eng {
+        margin: 26vw 5vw 0 0;
+    }
+
+    .fran-bow-title1 {
+        display: none;
+    }
+
+    .fran-bow-title {
+        display: flex;
+        width: 37vw;
+        margin: 2vw 5vw 0 0;
+    }
+
+    .fran-bow-size {
+        width: 45vw;
+    }
+
+    .wolf-among-us-container {
+        background-image: url(images/thewoldamongus1920.png);
+    }
+
+    .wolf-among-us-sign-container {
+        margin: 10vw 0 0 20vw;
+    }
+
+    .wolf-among-us-size {
+        width: 54vw;
+    }
+
+    .wolf-among-us-text-container {
+        margin: 30vw 0 0 0;
+        width: 75vw;
+    }
+
+    .emmeline-burns-container {
+        background-image: url(images/emmeline-burns1920.png);
+        justify-content: flex-start;
+    }
+
+    .emmeline-burns-size {
+        width: 85vw;
+    }
+
+    .emmeline-burns-sign-container {
+        margin: 20vw 0 0 0;
+    }
+
+    .emmeline-burns-text-container {
+        margin: 10vw 0 0 0;
+        width: 75vw;
+    }
+
+    .footer-main-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .footer-header-container {
+        padding: 15vw;
+    }
+
+    .to-be-continued-text {
+        font-size: 9vw;
+    }
+
+    .main-left-content {
+        justify-content: center;
+    }
+
+    .support-text-container {
+        width: 82vw;
+        margin: 10vw 0 0 0;
+    }
+
+    .support-text {
+        font-size: 7vw;
+    }
+
+    .support-btn {
+        width: 50vw;
+        margin: 10vw 0 12vw;
+    }
+
+    .found-an-error-text {
+        width: 38vw;
+        font-size: 7vw;
+    }
+
+    .mail-icon-size {
+        margin: 3vw 0 0 0;
+        width: 14vw;
+    }
+
+    .catloc_exploding_head-size {
+        width: 38vw;
+        margin-right: 2vw;
+    }
+
+    .copyright-line {
+        height: 5px;
+        width: 100%;
+    }
+
+    .copyright-text {
+        font-size: 3vw;
+        margin: 4vw;
+    }
+}
+
+@media (min-width:0px) and (max-width:412px) {
+
+    .games-container {
+        height: 223vw;
+    }
+
+    .a-new-life-container {
+        background-image: url(images/anewlifebg917.png);
+    }
+
+    .a-new-life-sign-size {
+        margin: 13vw;
+    }
+
+    .fran-bow-container {
+        background-image: url(images/franbowbg917.png);
+    }
+
+    .fran-bow-sign-container_eng {
+        margin: 30vw 5vw 0 0;;
+    }
+
+    .wolf-among-us-container {
+        background-image: url(images/thewoldamongus917.png);
+    }
+
+    .wolf-among-us-sign-container {
+        margin: 13vw 0 0 20vw;
+    }
+
+    .emmeline-burns-container {
+        background-image: url(images/emmeline-burns917.png);
+    }
+
+    .footer-header-container {
+        padding: 21vw 0;
+    }
+
+    .support-text {
+        font-size: 8vw;
+    }
+
+    .support-text-container {
+        width: 95vw;
+    }
+
+    .support-btn {
+        width: 60vw;
+        margin: 10vw 0 15vw;
+    }
+
+    .main-left-content {
+        margin: 0 0 15vw 0;
+    }
+
+    .found-an-error-text {
+        width: 45vw;
+        font-size: 8vw;
+    }
+
+    .mail-icon-size {
+        width: 15vw;
+    }
+
+    .catloc_exploding_head-size {
+        width: 43vw;
+    }
+
+    .copyright-text {
+        font-size: 4vw;
+        margin: 5vw;
+    }
+}
