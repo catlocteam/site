@@ -86,7 +86,7 @@
   background-color: var(--pink);
   border-radius: 30px;
   width: 50vw;
-  height: 15vw;
+  height: 150px;
 }
 
 .our-team-container {
@@ -264,7 +264,6 @@
 
   .our-team-swiper-container {
     width: 70%;
-    height: 70vw;
   }
 
   .we-are-looking-for-title {
@@ -283,13 +282,12 @@
 
 
 .wrapper {
-	/* background-color: #E1E2E2; */
-	overflow: hidden;
-	position: relative;
-	display: flex;
-	align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
   border-radius: 30px;
-	padding: 0 20px;
+  width: 100%; /* або конкретну ширину */
 }
 
 .wrapper:before, .wrapper:after {
@@ -311,16 +309,129 @@
 	top: 0;
 }
 
+.track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: fit-content;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+}
+
+*::before,
+*::after {
+  font-family: "boba", sans-serif;
+  font-size: 14px;
+}
 
 
-.wrapper .track {
-	display: flex;
-	width: calc(150px * 10);
-	animation: scroll 15s 0.5s linear infinite;
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: transparent; 
+  white-space: nowrap;
+  font-family: "boba", sans-serif;
+  font-size: 14px;
+  transition: opacity 0.3s ease; 
 }
-.wrapper .logo {
-	/* width: 150px; */
+
+.logo:hover::after {
+  color: white;  
+  opacity: 1;  
 }
+
+
+.logo:nth-child(1)::after,
+.logo:nth-child(17)::after {
+  content: "Іванка";
+}
+
+.logo:nth-child(2)::after,
+.logo:nth-child(18)::after {
+  content: "Алексаша";
+}
+
+.logo:nth-child(3)::after,
+.logo:nth-child(19)::after {
+  content: "Ангеліна";
+}
+
+.logo:nth-child(4)::after,
+.logo:nth-child(20)::after {
+  content: "Аюні";
+}
+
+.logo:nth-child(5)::after,
+.logo:nth-child(21)::after {
+  content: "Віка";
+}
+
+.logo:nth-child(6)::after,
+.logo:nth-child(22)::after {
+  content: "Джу";
+}
+
+.logo:nth-child(7)::after,
+.logo:nth-child(23)::after {
+  content: "Кателуца";
+}
+
+.logo:nth-child(8)::after,
+.logo:nth-child(24)::after {
+  content: "Катя";
+}
+
+.logo:nth-child(9)::after,
+.logo:nth-child(25)::after {
+  content: "Настя";
+}
+
+.logo:nth-child(10)::after,
+.logo:nth-child(26)::after {
+  content: "Світлодіод";
+}
+
+.logo:nth-child(11)::after,
+.logo:nth-child(27)::after {
+  content: "Софія";
+}
+
+.logo:nth-child(12)::after,
+.logo:nth-child(28)::after {
+  content: "Хімера";
+}
+
+.logo:nth-child(13)::after,
+.logo:nth-child(29)::after {
+  content: "Шо";
+}
+
+.logo:nth-child(14)::after,
+.logo:nth-child(30)::after {
+  content: "Яся";
+}
+
+.logo:nth-child(15)::after,
+.logo:nth-child(31)::after {
+  content: "Євгенія";
+}
+
+.logo:nth-child(16)::after,
+.logo:nth-child(32)::after {
+  content: "Іванна";
+}
+
+.logo:nth-child(17)::after,
+.logo:nth-child(33)::after {
+  content: "Іванка";
+}
+
+
 
 .wrapper .logo img {
 	height: 140px;
