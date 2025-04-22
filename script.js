@@ -109,7 +109,7 @@ const translations = {
     emmelineImg: "images/emmeline_eng.png",
 
     emmelineText:
-      ' Help a young girl named <span style="color: black">Fran Bow</span> escape from a asylum and find her cat... And the killer of her parents.',
+      ' Learn about the tragic fate of young <span style="color: black">Emmeline Burns</span>. Can the ghost find peace after talking to the spirit of her beloved?',
     soon: "to be continued...",
     findError: "Have found a problem?",
     thanks: "We are grateful for every donation. Thank you for your support!",
