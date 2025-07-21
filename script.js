@@ -90,6 +90,7 @@ const translations = {
     portfolioView: "🔍 View online",
     portfolioDownload: "📥 Download PDF",
 
+    
     // ! Values page
 
     nationalizm: "ukrainian national identity",
