@@ -13,6 +13,10 @@ const translations = {
     collaboration: "ЩоДо СПіВПРАЦі:",
     "your-email": "ВАША ПОШТА...",
     supportBtn: "images/support-btn.svg",
+    portfolio: "Портфоліо",
+    portfolioPDF: "portfolio/ПОРТФОЛІО КЕТЛОКТІМ.pdf",
+    portfolioView: "🔍 Перегляд онлайн",
+    portfolioDownload: "📥 Завантажити PDF",
 
     // ! Contact page
     collaboration: "ЩоДо СПіВПРАЦі:",
@@ -81,6 +85,10 @@ const translations = {
     smm: "- SMM specialist",
     textureArtist: "- Texture Artist",
     communication: "- Communications Specialist",
+    portfolio: "Portfolio",
+    portfolioPDF: "portfolio/CATLOCTEAM PORTFOLIO.pdf",
+    portfolioView: "🔍 View online",
+    portfolioDownload: "📥 Download PDF",
 
     // ! Values page
 
@@ -155,6 +163,17 @@ function setLanguage(lang) {
   if (emmelineImg) {
     emmelineImg.setAttribute("src", translations[lang].emmelineImg);
   }
+  const viewBtn = document.getElementById("portfolio-view");
+  const downloadBtn = document.getElementById("portfolio-download");
+  const pdfPath = translations[lang].portfolioPDF;
+
+  if (viewBtn && downloadBtn) {
+    viewBtn.href = pdfPath;
+    downloadBtn.href = pdfPath;
+    downloadBtn.download = pdfPath.split("/").pop(); // щоб завантаження мало імʼя
+  }
+  viewBtn.innerHTML = translations[lang].portfolioView;
+  downloadBtn.innerHTML = translations[lang].portfolioDownload;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -172,6 +191,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let burgerBtn = document.getElementById("burger-btn");
 let headerMobile = document.getElementById("header-mobile-menu");
+
+function togglePortfolioMenu() {
+  const menu = document.getElementById("portfolio-menu");
+  menu.classList.toggle("expanded");
+}
+
+// оновлюємо PDF-посилання
+const viewLink = document.getElementById("portfolio-view");
+const downloadLink = document.getElementById("portfolio-download");
+if (viewLink && downloadLink) {
+  const pdfPath = translations[lang].portfolioPDF;
+  viewLink.href = pdfPath;
+  downloadLink.href = pdfPath;
+}
 
 burgerBtn?.addEventListener("click", () => {
   if (headerMobile.style.display === "block") {

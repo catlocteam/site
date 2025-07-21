@@ -125,6 +125,52 @@ a {
   width: fit-content;
 }
 
+.portfolio-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Кнопки, які з'являються */
+.portfolio-menu {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Активний стан */
+.portfolio-menu.expanded {
+  max-height: 150px; /* Достатньо для двох кнопок */
+  opacity: 1;
+}
+
+.portfolio-link {
+  background-color: #ed208b;
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: max-content;
+}
+
+.portfolio-link:hover {
+  background-color: #ff50b7;
+}
+
+.portfolio-main-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ed208b;
+  cursor: pointer;
+}
+
+
 .header {
   display: flex;
   position: relative;

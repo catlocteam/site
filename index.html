@@ -32,8 +32,19 @@
               />
             </a>
             <h2>
-              <a href="values.html"  data-i18n="values" class="header_items" id="ua-lang">цінності</a>
-          </h2>
+              <a style="padding-right: 60px;" href="values.html"  data-i18n="values" class="header_items" id="ua-lang">цінності</a>
+            </h2>
+           <div class="portfolio-dropdown">
+  <h2>
+    <button onclick="togglePortfolioMenu()" data-i18n="portfolio">Портфоліо</button>
+  </h2>
+  <div id="portfolio-menu" class="portfolio-menu hidden">
+    <a id="portfolio-view" data-i18n="portfolioView" href="./portfolio/ПОРТФОЛІО КЕТЛОКТІМ.pdf" target="_blank" class="portfolio-link">🔍 Перегляд онлайн</a>
+    <a id="portfolio-download" data-i18n="portfolioDownload" href="./portfolio/ПОРТФОЛІО КЕТЛОКТІМ.pdf" download class="portfolio-link">📥 Завантажити PDF</a>
+  </div>
+</div>
+
+
            
             <div class="uaengbtn_container header_items">
               <div class="uaeng-item">
@@ -267,10 +278,5 @@
     <script src="script.js" defer></script>
   </body>
 
-  <!-- при натисканні .burger-btn - .header-mobile-menu має міняти display з none на flex, #no-menu на none, а .header-mobile-container розкривати градієнт, прописаний в css(не впевнена який саме параметр треба 
-  прописати в background, можливо просто скопіювати налаштування градієнуту) +розібратися як зробити, щоб спадне меню накладалось зверху і перекривало, я не вмію :(
-  
-  при натисканні на .ua-switch та .eng-switch відповідно, для #ua-lang має видаватися display flex, а #eng-lang - display none, і навпаки
-  при натисканні на .ua-eng-mobile також має для #ua-lang та #eng-lang мінятися display, але 
-  -->
+
 </html>
